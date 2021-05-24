@@ -2,18 +2,19 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="./css/style.css">
 		<title>Assinatura</title>
 	</head>
 	<body>
-		<div class="retangulo">
+		<div class="c-container">
 			<input type="text" placeholder="Nome e Sobrenome" class="nome">
 			<input type="text" placeholder="Cargo" class="cargo">
 			<input type="cel" placeholder="Telefone" class="telefone mask-brphones">
 			<input type="cel" placeholder="Celular" class="celular mask-brphones">
 			<button id="gerar" onclick="gerarFunction()">Gerar</button>
 		</div>
-		<div class="retangulo">
+		<div class="c-container">
 			<div id="copycodfont">
 				<table id="table">
 					<tr>
@@ -63,6 +64,9 @@
 			<button onclick="copyFunction()">Copiar</button>
 			<button onclick="copyToClip(document.getElementById('copycodfont').innerHTML)">Copiar Código Fonte</button>
 		</div>
+		<footer class="c-copy">
+			<p class="c-copy__text">Powered by <a href="http://renanmorais.online" target="_blank">Renan Morais</a></p>
+		</footer>
 		<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mask.min.js"></script>
 		<script type="text/javascript" src="js/global.js"></script>
